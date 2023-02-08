@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="549.0" stylesheets="@../dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReportsPackage.ReportsFXMLController">
+   <children>
+      <HBox layoutX="28.0" layoutY="36.0" prefHeight="174.0" prefWidth="487.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#UsersReportsButton" prefHeight="168.0" prefWidth="228.0" style="-fx-border-color: transparent;" text="Users Report">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Client_list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DevicesReportsButton" prefHeight="168.0" prefWidth="228.0" style="-fx-border-color: transparent;" text="Devices Report">
+               <graphic>
+                  <ImageView fitHeight="81.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ps.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="28.0" layoutY="222.0" prefHeight="174.0" prefWidth="494.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#DrinksReportsButton" prefHeight="165.0" prefWidth="232.0" style="-fx-border-color: transparent;" text="Drinks Report">
+               <graphic>
+                  <ImageView fitHeight="88.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../8-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#OrdersReportsButton" prefHeight="165.0" prefWidth="228.0" style="-fx-border-color: transparent;" text="Orders Report">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../clipboard-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Hyperlink layoutX="435.0" layoutY="396.0" onAction="#OpenReports" prefHeight="32.0" prefWidth="100.0" text="Full Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

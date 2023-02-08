@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1474.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.FXMLDocumentController">
+   <children>
+      <Button fx:id="btn" accessibleRole="COMBO_BOX" layoutX="1111.0" layoutY="-7.0" mnemonicParsing="false" onAction="#BackToMainScene" prefHeight="49.0" prefWidth="128.0" style="-fx-border-color: transperent;" stylesheets="@../AlertMaker/dark-theme.css" text="logout">
+         <textFill>
+            <RadialGradient centerX="1.0" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+      <ImageView fx:id="UserNameLoginImage" fitHeight="37.0" fitWidth="46.0" layoutX="737.0" layoutY="25.0" onMousePressed="#CheckUserNameExist" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../user-login-images-png-5.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a2d3" height="73.0" layoutX="-2.0" layoutY="-2.0" strokeType="INSIDE" width="96.0">
+         <stroke>
+            <RadialGradient radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333645" height="625.0" layoutX="-2.0" layoutY="69.0" strokeType="INSIDE" width="96.0">
+         <stroke>
+            <RadialGradient centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <TabPane layoutX="247.0" layoutY="66.0" prefHeight="625.0" prefWidth="1254.0" style="-fx-background-image: url('Untitled-2.png');" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Play Station 3 i">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Play Station 3 ii">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Play Station 3 iii">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 3 iv">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="787.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 3 v">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="787.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 4 i">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 4 ii">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 4 iii">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 4 iv">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="1254.0" />
+               </content>
+            </Tab>
+            <Tab text="Play Station 4 v">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="8.0" layoutY="-41.0" prefHeight="167.0" prefWidth="146.0" text="Admin Panel" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="1.0" layoutY="71.0" mnemonicParsing="false" onAction="#StartUsers" prefHeight="96.0" prefWidth="90.0" style="-fx-border-color: transperent;" stylesheets="@../dark-theme.css" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial" size="10.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../baseline_people_outline_black_18dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="1.0" layoutY="382.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" style="-fx-border-color: transperent;" stylesheets="@../dark-theme.css" text="Devices">
+         <font>
+            <Font name="Arial Black" size="10.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="14.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../outline_desktop_windows_black_18dp.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="422.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" style="-fx-border-color: transperent;" stylesheets="@../dark-theme.css" text="Drinks">
+         <font>
+            <Font name="Arial Black" size="10.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="14.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../outline_free_breakfast_black_18dp.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="462.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transperent;" stylesheets="@../dark-theme.css" text="print ">
+         <font>
+            <Font name="Arial Black" size="10.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="14.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../printer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="1111.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../outline_home_black_18dp.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="147.0" layoutY="562.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="63.0" style="-fx-border-color: #00a2d3;" stylesheets="@../dark-theme.css" text="save">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pass" layoutX="14.0" layoutY="512.0" prefHeight="37.0" prefWidth="201.0" promptText="Enter Admin Password here" style="-fx-prompt-text-fill: darkgoldenrod;" stylesheets="@stylesheet.css" />
+      <ImageView fitHeight="32.0" fitWidth="23.0" layoutX="187.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../2288-200.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="137.0" text="Users" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

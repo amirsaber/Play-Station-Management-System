@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.MainSceneControllerClass">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1474.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button accessibleRole="COMBO_BOX" layoutX="1111.0" layoutY="-7.0" mnemonicParsing="false" onAction="#BackToMainScene" prefHeight="49.0" prefWidth="128.0" style="-fx-border-color: transparent; -fx-alignment: left; -fx-graphic-text-gap: 10; -fx-text-fill: white;" stylesheets="@../AlertMaker/dark-theme.css" text="logout">
+               <textFill>
+                  <RadialGradient centerX="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Logout%20Rounded%20Up_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="46.0" layoutX="737.0" layoutY="25.0" onMousePressed="#CheckUserNameExist" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Male%20User_96px.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a2d3" height="73.0" layoutX="-2.0" layoutY="-2.0" strokeType="INSIDE" width="249.0">
+               <stroke>
+                  <RadialGradient radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333645" height="625.0" layoutX="-2.0" layoutY="69.0" strokeType="INSIDE" width="249.0">
+               <stroke>
+                  <RadialGradient centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <TabPane layoutX="247.0" layoutY="66.0" prefHeight="625.0" prefWidth="1223.0" style="-fx-background-image: url('Untitled-2.png');" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Play Station 3 i">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="980.0">
+                           <children>
+                              <HBox layoutY="-11.0" prefHeight="593.0" prefWidth="1223.0" spacing="35.0">
+                                 <children>
+                                    <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                             <children>
+                                                <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                   <children>
+                                                      <Text fx:id="ps3itext" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                         <font>
+                                                            <Font size="32.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                         <children>
+                                                            <Button fx:id="StartTimer" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                            <Button fx:id="ResrtTimer" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                               <HBox.margin>
+                                                                  <Insets />
+                                                               </HBox.margin>
+                                                            </Button>
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <VBox.margin>
+                                                            <Insets right="65.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="72.0" top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                   <children>
+                                                      <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                         <items>
+                                                            <MenuItem mnemonicParsing="false" onAction="#Ps3iPriceForHour" text="per hour" />
+                                                            <MenuItem mnemonicParsing="false" onAction="#Ps3iPriceForMatch" text="per match" />
+                                                         </items>
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </MenuButton>
+                                                      <TextField fx:id="Ps3iPriceTextField" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                      <TextField fx:id="Ps3iNumberTextField" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                         <font>
+                                                            <Font size="30.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                <Button layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                   <graphic>
+                                                      <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Save_96px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                   <graphic>
+                                                      <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Delete_96px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label fx:id="ps3iLabel" layoutX="136.0" layoutY="267.0" prefHeight="82.0" prefWidth="63.0" text="Label" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Drinks">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                             <children>
+                                                <ListView fx:id="ps3ilist" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps3iFillLFromistView" onMouseClicked="#Ps3iFillLFromistView" onMouseEntered="#Ps3iFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                <TextField fx:id="Ps3iDrinkPriceTextField" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                <TextField fx:id="Ps3iDrinkNumberTextField" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                   <font>
+                                                      <Font size="30.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                <Button layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                   <graphic>
+                                                      <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Save_96px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                   <graphic>
+                                                      <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Delete_96px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label fx:id="ps3iDrinkLabel" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="63.0" text="Label" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="13.0" />
+                                                   </font>
+                                                </Label>
+                                             </children></AnchorPane>
+                                       </content>
+                                    </TitledPane>
+                                    <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="528.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                       <children>
+                                          <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                             <children>
+                                                <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                   <children>
+                                                      <TextField fx:id="ps3iMatlob" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                      <Label text="المطلوب" textFill="#f5f3f3">
+                                                         <font>
+                                                            <Font name="Hacen Liner XXL" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                   <children>
+                                                      <TextField fx:id="ps3iMadfo3" onKeyReleased="#handleAutomatic" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                      <Label text="المدفوع" textFill="#f5f3f3">
+                                                         <font>
+                                                            <Font name="Hacen Liner XXL" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                   <children>
+                                                      <TextField fx:id="ps3iBaqy" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                      <Label text="الباقي" textFill="#f5f3f3">
+                                                         <font>
+                                                            <Font name="Hacen Liner XXL" size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                          <TextArea fx:id="ps3iTextarea" layoutX="35.0" layoutY="249.0" prefHeight="181.0" prefWidth="227.0" />
+                                          <Button layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps3iSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                             <graphic>
+                                                <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Ok_96px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </children></Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Play Station 3 ii">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                  <Tab text="Play Station 3 iii">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 3 iv">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="787.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 3 v">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="787.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 4 i">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 4 ii">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 4 iii">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 4 iv">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="1254.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Play Station 4 v">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="65.0" layoutY="18.0" prefHeight="32.0" prefWidth="116.0" text="Admin Panel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="1.0" layoutY="71.0" mnemonicParsing="false" onAction="#UserDatabaseHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-alignment: left; -fx-graphic-text-gap: 55;" stylesheets="@../dark-theme.css" text="Users" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial" size="10.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../User%20Groups_50px1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="2.0" layoutY="111.0" mnemonicParsing="false" onAction="#DevicesDatabaseHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-alignment: left; -fx-graphic-text-gap: 55;" stylesheets="@../dark-theme.css" text="Devices">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Monitor_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="1.0" layoutY="151.0" mnemonicParsing="false" onAction="#DrinksDatabaseHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-alignment: left; -fx-graphic-text-gap: 55;" stylesheets="@../dark-theme.css" text="Drinks">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Cafe_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="1.0" layoutY="191.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-alignment: left; -fx-graphic-text-gap: 55;" stylesheets="@../dark-theme.css" text="Reports">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Timesheet_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="1.0" layoutY="231.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-alignment: left; -fx-graphic-text-gap: 55;" stylesheets="@../dark-theme.css" text="Start Day">
+               <font>
+                  <Font name="Arial Black" size="10.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Time_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="147.0" layoutY="562.0" mnemonicParsing="false" onAction="#SetAdminPassword" prefHeight="32.0" prefWidth="63.0" style="-fx-border-color: #00a2d3;" stylesheets="@../dark-theme.css" text="save">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="AdminPass" layoutX="14.0" layoutY="512.0" onAction="#SetAdminPassword" prefHeight="37.0" prefWidth="201.0" promptText="Enter Admin Password here" style="-fx-prompt-text-fill: darkgoldenrod;" stylesheets="@stylesheet.css" />
+            <ImageView fitHeight="32.0" fitWidth="23.0" layoutX="187.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../2288-200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

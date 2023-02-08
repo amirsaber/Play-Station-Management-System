@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4c2ef9fa-a319-4765-a713-b846030760b6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from Orders]]>
+	</queryString>
+	<field name="Number" class="java.lang.Object"/>
+	<field name="Cashier" class="java.lang.Object"/>
+	<field name="OrderDetails" class="java.lang.Object"/>
+	<field name="OrderPrice" class="java.lang.Object"/>
+	<field name="StartTimes" class="java.lang.Object"/>
+	<field name="EndTime" class="java.lang.Object"/>
+	<title>
+		<band height="52" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="100" height="20" uuid="7c908f86-596c-4f6b-bb84-b3f4167e6565"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="196" y="0" width="163" height="52" forecolor="#0000FF" uuid="24bc9607-cf7b-47c7-8159-795edc6c3ec5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Titillium Web" size="24" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Orders Report]]></text>
+			</staticText>
+			<textField pattern="h.mm a">
+				<reportElement x="0" y="31" width="100" height="20" uuid="ea7b2ca4-3ffa-46b7-976f-105e034f02e0"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="51" width="555" height="1" uuid="527d56c4-8125-41f1-b11c-724d9196f7f9"/>
+			</line>
+			<image>
+				<reportElement x="453" y="1" width="100" height="30" uuid="bf0c2af2-1cd2-4223-9146-0ac0d8a28239"/>
+				<imageExpression><![CDATA["C:\\Meda photo\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="33" width="99" height="20" uuid="0ede6ab6-612a-4a7f-8adf-5a766c2361eb"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{Number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="33" width="96" height="20" forecolor="#FF0033" uuid="15bbe5cd-58ba-4b8e-88c4-1abcab54470f"/>
+				<textElement>
+					<font fontName="Titillium Web" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{Cashier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="33" width="81" height="20" uuid="2a910ecf-3c6b-47ff-ad4a-7fd0255734a5"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{OrderPrice}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="277" y="33" width="276" height="77" isPrintWhenDetailOverflows="true" uuid="42b59bb1-f715-47ad-a98d-90832721b159"/>
+				<textElement>
+					<font fontName="Hacen Digital Arabia"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{OrderDetails}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="2" width="99" height="20" forecolor="#0000FF" uuid="79d038b3-7512-497b-8267-431fecd5bf2d"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="2" width="96" height="20" forecolor="#0000FF" uuid="1539d6ee-05a8-4d02-a9a9-dc33c83eb243"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Cashier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="2" width="81" height="20" forecolor="#0000FF" uuid="7900f8d3-2f89-47b1-98f7-8d6bcdab432e"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Order Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="2" width="276" height="20" forecolor="#0000FF" uuid="34f25676-12ca-48e9-b253-bf535886acf5"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Order Details]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="1" y="127" width="555" height="1" isPrintWhenDetailOverflows="true" uuid="01325eee-28b0-46b9-8ef9-b6fe0d874a05"/>
+			</line>
+			<staticText>
+				<reportElement x="359" y="53" width="56" height="24" uuid="484691e1-a4b8-495f-8a39-ef021e873834"/>
+				<textElement>
+					<font fontName="Hacen Digital Arabia" size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[الكميه]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="53" width="52" height="24" uuid="3d57316e-e15b-412f-9450-6032d344124a"/>
+				<textElement>
+					<font fontName="Hacen Digital Arabia" size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[الصنف]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="53" width="56" height="24" uuid="0721b7e0-0701-47ff-8a39-794dfa236df1"/>
+				<textElement>
+					<font fontName="Hacen Digital Arabia" size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[السعر]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="57" width="99" height="20" forecolor="#0000FF" uuid="97636062-0138-47fd-8055-5f5d9ef5c824"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Start Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="57" width="96" height="20" forecolor="#0000FF" uuid="1cd92f76-bd6a-4856-a823-0e781da1dbe9"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[End Time]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="91" width="99" height="19" uuid="2c044ebb-625a-441f-a398-bd446a8c3a45"/>
+				<textFieldExpression><![CDATA[""+$F{StartTimes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="91" width="96" height="19" uuid="67e4a7a4-e804-4e4a-b900-76635ee4d8cf"/>
+				<textFieldExpression><![CDATA[""+$F{EndTime}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

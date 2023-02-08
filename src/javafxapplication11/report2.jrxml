@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9243db43-c855-4fd0-a23a-9d36a41c3821">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Drinks]]>
+	</queryString>
+	<field name="Name" class="java.lang.Object"/>
+	<field name="Price" class="java.lang.Object"/>
+	<field name="Quantity" class="java.lang.Object"/>
+	<field name="Count" class="java.lang.Object"/>
+	<title>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="196" y="0" width="163" height="51" forecolor="#0000FF" uuid="1949d361-52bd-4ec9-9bbc-af35c2c3753a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Titillium Web" size="24" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Drinks Report]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="100" height="20" uuid="86dc1997-741e-414f-8709-6e54f506f657"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="h.mm a">
+				<reportElement x="0" y="31" width="100" height="20" uuid="654c1781-fb02-42f5-bc37-9b63d91e43f3"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="50" width="555" height="1" uuid="cf9ae3b9-602a-4a1f-87ab-fc31cde1234b"/>
+			</line>
+			<image>
+				<reportElement x="455" y="1" width="100" height="30" uuid="ffd88c2d-c1ef-4d19-b0c7-6b841ccc9b7a"/>
+				<imageExpression><![CDATA["C:\\Meda photo\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="35" width="185" height="20" forecolor="#FF0033" uuid="fb87747c-0dc5-4b03-98d1-9f50b15a0925"/>
+				<textElement>
+					<font fontName="Traditional Arabic" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="35" width="185" height="20" uuid="d8d5757f-6624-404d-937c-c307989b546f"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="35" width="185" height="20" uuid="1a6d55d4-291e-4ff2-bc91-940b4d6f50d3"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{Count}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="20" forecolor="#0000FF" uuid="81eb78ce-f68b-40f6-99e1-da0053ba0538"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="20" forecolor="#0000FF" uuid="7df58b21-38e1-4351-a238-4296f3f48530"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="20" forecolor="#0000FF" uuid="d29674fb-4456-4e35-8c07-f69c2bf51fff"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Drink Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="55" width="555" height="1" uuid="93e408fe-ae58-4b7e-88d8-051207b7de55"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

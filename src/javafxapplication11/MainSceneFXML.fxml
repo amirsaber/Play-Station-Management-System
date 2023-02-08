@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#Minimizee" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #3d3e43;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.MainSceneControllerClass">
+   <children>
+      <Pane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#Minimizee" prefHeight="1025.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button accessibleRole="COMBO_BOX" alignment="BOTTOM_LEFT" layoutX="1121.0" layoutY="-2.0" mnemonicParsing="false" onAction="#BackToMainScene" prefHeight="19.0" prefWidth="128.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 10; -fx-text-fill: white;" stylesheets="@../AlertMaker/dark-theme.css" text="logout">
+               <textFill>
+                  <RadialGradient centerX="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Logout%20Rounded%20Up_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a2d3" height="73.0" layoutX="-2.0" layoutY="-2.0" strokeType="INSIDE" width="249.0">
+               <stroke>
+                  <RadialGradient radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333645" height="953.0" layoutX="-2.0" layoutY="69.0" onMouseEntered="#Minimizee" strokeType="INSIDE" width="249.0">
+               <stroke>
+                  <RadialGradient centerY="1.0" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Rectangle>
+            <TabPane layoutX="247.0" layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#Minimizee" prefHeight="625.0" prefWidth="1002.0" style="-fx-background-image: url('Untitled-2.png');" tabClosingPolicy="UNAVAILABLE" tabMinWidth="200.0">
+              <tabs>
+                  <Tab text="Devices From Table 1 To Table 7">
+                    <content>
+                      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="1006.0">
+                           <children>
+                              <TabPane prefHeight="596.0" prefWidth="1002.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="80.0">
+                                 <tabs>
+                                    <Tab fx:id="ttab1" text="PS 3 Table 1">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" onMouseEntered="#Minimizee" prefHeight="596.0" prefWidth="980.0">
+                                             <children>
+                                                <HBox prefHeight="593.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="37.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button1" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel" layoutX="12.0" layoutY="168.0" opacity="0.0" prefHeight="49.0" prefWidth="97.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps3iFillLFromistView" onMouseClicked="#Ps3iFillLFromistView" onMouseEntered="#Ps3iFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button2" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="92.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="525.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo3" onKeyReleased="#handleAutomatic" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea" layoutX="35.0" layoutY="249.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button3" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps3iSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="12.0" layoutY="458.0" prefHeight="49.0" prefWidth="101.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="ttab2" text="PS 3 Table 2">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="593.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext1" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer1" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer1" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField1" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField1" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button4" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel1" layoutX="12.0" layoutY="168.0" opacity="0.0" prefHeight="49.0" prefWidth="104.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist1" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps3iiFillLFromistView" onMouseClicked="#Ps3iiFillLFromistView" onMouseEntered="#Ps3iiFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField1" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField1" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button5" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel1" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="95.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="528.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob1" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo31" onKeyReleased="#handleAutomatic1" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy1" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea1" layoutX="35.0" layoutY="249.0" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button6" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps3iiSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="12.0" layoutY="458.0" prefHeight="49.0" prefWidth="100.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="ttab3" text="PS 3 Table 3">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="593.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext2" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer2" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer2" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiiPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiiPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiiPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3iiiPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField2" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField2" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button7" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiiSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiiCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel2" layoutX="14.0" layoutY="176.0" opacity="0.0" prefHeight="40.0" prefWidth="108.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist2" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps3iiiFillLFromistView" onMouseClicked="#Ps3iiiFillLFromistView" onMouseEntered="#Ps3iiiFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField2" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField2" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button8" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiiSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3iiiCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel2" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="96.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="528.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob2" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo32" onKeyReleased="#handleAutomatic2" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy2" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea2" layoutX="35.0" layoutY="249.0" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button9" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps3iiiSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="12.0" layoutY="458.0" prefHeight="49.0" prefWidth="104.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="ttab4" text="PS 3 Table 4">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="787.0">
+                                             <children>
+                                                <HBox prefHeight="593.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext3" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer3" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer3" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3ivPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3ivPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3ivPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3ivPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField3" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField3" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button10" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3ivSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3ivCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel3" layoutX="14.0" layoutY="179.0" opacity="0.0" prefHeight="37.0" prefWidth="116.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist3" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps3ivFillLFromistView" onMouseClicked="#Ps3ivFillLFromistView" onMouseEntered="#Ps3ivFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField3" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField3" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button11" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3ivSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3ivCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel3" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="96.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="528.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob3" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo33" onKeyReleased="#handleAutomatic3" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy3" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea3" layoutX="35.0" layoutY="249.0" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button12" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps3ivSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="14.0" layoutY="458.0" prefHeight="49.0" prefWidth="100.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="ttab5" text="PS 3 Table 5">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="787.0">
+                                             <children>
+                                                <HBox prefHeight="593.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext4" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer4" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer4" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3vPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3vPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3vPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps3vPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField4" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField4" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button13" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3vSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3vCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel4" layoutX="12.0" layoutY="182.0" opacity="0.0" prefHeight="37.0" prefWidth="122.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist4" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps3vFillLFromistView" onMouseClicked="#Ps3vFillLFromistView" onMouseEntered="#Ps3vFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField4" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField4" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button14" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3vSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps3vCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel4" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="98.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="528.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob4" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo34" onKeyReleased="#handleAutomatic4" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy4" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea4" layoutX="35.0" layoutY="249.0" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button15" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps3vSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="12.0" layoutY="458.0" prefHeight="49.0" prefWidth="101.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="ttab6" text="PS 4 Table 1">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="651.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext5" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer5" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer5" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField5" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField5" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button16" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel5" layoutX="14.0" layoutY="184.0" opacity="0.0" prefHeight="32.0" prefWidth="94.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist5" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps4iFillLFromistView" onMouseClicked="#Ps4iFillLFromistView" onMouseEntered="#Ps4iFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField5" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField5" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button17" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel5" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="93.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="529.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob5" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo35" onKeyReleased="#handleAutomatic5" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy5" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea5" layoutX="35.0" layoutY="249.0" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button18" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps4iSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="12.0" layoutY="458.0" prefHeight="49.0" prefWidth="102.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="ttab7" text="PS 4 Table 2">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="593.0" prefWidth="1000.0" spacing="35.0">
+                                                   <children>
+                                                      <TitledPane animated="false" prefHeight="376.0" prefWidth="297.0" text="Play Station ">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <VBox layoutX="12.0" layoutY="14.0" prefHeight="152.0" prefWidth="258.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+                                                                     <children>
+                                                                        <Text fx:id="ps3itext6" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" wrappingWidth="185.9999920129776">
+                                                                           <font>
+                                                                              <Font size="32.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <HBox prefHeight="45.0" prefWidth="105.0" spacing="15.0">
+                                                                           <children>
+                                                                              <Button fx:id="StartTimer6" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css" />
+                                                                              <Button fx:id="ResrtTimer6" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" stylesheets="@../dark-theme%20-%20Copy.css">
+                                                                                 <HBox.margin>
+                                                                                    <Insets />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <VBox.margin>
+                                                                              <Insets right="65.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="72.0" top="20.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <Pane layoutX="201.0" layoutY="27.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" />
+                                                                  <HBox layoutX="12.0" layoutY="223.0" prefHeight="49.0" prefWidth="276.0" spacing="35.0">
+                                                                     <children>
+                                                                        <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="Price list">
+                                                                           <items>
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iiPriceForHour" text="Per Hour Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iiPriceForMatch" text="Per Match Single" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iiPriceForHourM" text="Per Hour Multi" />
+                                                                              <MenuItem mnemonicParsing="false" onAction="#Ps4iiPriceForMatchM" text="Per Match Multi" />
+                                                                           </items>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </MenuButton>
+                                                                        <TextField fx:id="Ps3iPriceTextField6" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                        <TextField fx:id="Ps3iNumberTextField6" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                           <font>
+                                                                              <Font size="30.0" />
+                                                                           </font>
+                                                                        </TextField>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <Label layoutX="141.0" layoutY="192.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="224.0" layoutY="192.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button19" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iiSaveButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iiCancelBButtonPs" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iLabel6" layoutX="14.0" layoutY="184.0" opacity="0.0" prefHeight="32.0" prefWidth="103.0" text="ps indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ComboBox layoutX="10.0" layoutY="261.0" prefHeight="25.0" prefWidth="90.0" promptText="Others" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <TitledPane animated="false" layoutX="30.0" layoutY="30.0" prefHeight="376.0" prefWidth="297.0" text="Food And Drinks">
+                                                         <content>
+                                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="420.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+                                                               <children>
+                                                                  <ListView fx:id="ps3ilist6" layoutX="14.0" layoutY="14.0" onKeyReleased="#Ps4iiFillLFromistView" onMouseClicked="#Ps4iiFillLFromistView" onMouseEntered="#Ps4iiFillListView" prefHeight="265.0" prefWidth="128.0" />
+                                                                  <TextField fx:id="Ps3iDrinkPriceTextField6" layoutX="210.0" layoutY="68.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css" />
+                                                                  <TextField fx:id="Ps3iDrinkNumberTextField6" layoutX="210.0" layoutY="127.0" prefHeight="38.0" prefWidth="56.0" stylesheets="@dark-theme.css">
+                                                                     <font>
+                                                                        <Font size="30.0" />
+                                                                     </font>
+                                                                  </TextField>
+                                                                  <Label layoutX="157.0" layoutY="79.0" text="Price" textFill="#578bd0" />
+                                                                  <Label layoutX="148.0" layoutY="138.0" text="Number" textFill="#578bd0" />
+                                                                  <Button fx:id="button20" disable="true" layoutX="78.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iiSaveButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Save_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Button layoutX="201.0" layoutY="295.0" mnemonicParsing="false" onAction="#Ps4iiCancelBButtonDrink" prefHeight="41.0" prefWidth="37.0" stylesheets="@dark-theme%20-%20Copy%20-%20Copy.css">
+                                                                     <graphic>
+                                                                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../Delete_96px.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                     </graphic>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Button>
+                                                                  <Label fx:id="ps3iDrinkLabel6" layoutX="196.0" layoutY="188.0" prefHeight="82.0" prefWidth="94.0" text="drink indicator" textFill="RED">
+                                                                     <font>
+                                                                        <Font name="Titillium Web" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </content>
+                                                      </TitledPane>
+                                                      <Pane maxHeight="-Infinity" opacity="0.71" prefHeight="528.0" prefWidth="297.0" style="-fx-background-color: #2a2e37;">
+                                                         <children>
+                                                            <VBox layoutX="12.0" layoutY="32.0" prefHeight="200.0" prefWidth="273.0" spacing="20.0">
+                                                               <children>
+                                                                  <HBox prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMatlob6" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="المطلوب" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iMadfo36" onKeyReleased="#handleAutomatic6" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" />
+                                                                        <Label text="المدفوع" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                                  <HBox layoutX="10.0" layoutY="63.0" prefHeight="53.0" prefWidth="249.0" spacing="10.0">
+                                                                     <children>
+                                                                        <TextField fx:id="ps3iBaqy6" prefHeight="38.0" prefWidth="157.0" stylesheets="@../dark-theme.css" text="0" />
+                                                                        <Label text="الباقي" textFill="#f5f3f3">
+                                                                           <font>
+                                                                              <Font name="Hacen Liner XXL" size="24.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                            <TextArea fx:id="ps3iTextarea6" layoutX="35.0" layoutY="249.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.43" prefHeight="181.0" prefWidth="227.0" />
+                                                            <Button fx:id="button21" disable="true" layoutX="116.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ps4iiSaveUserButton" prefHeight="63.0" prefWidth="63.0" stylesheets="@../dark-theme%20-%20Copy%20-%20Copy.css">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../ModernXP-47-Printer-Save-Ok-icon.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label layoutX="12.0" layoutY="458.0" prefHeight="49.0" prefWidth="98.0" text="Save and print" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="Titillium Web" size="15.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </Pane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tab" disable="true" text="Devices From Table 8 To Table 14">
+                    <content>
+                      <AnchorPane fx:id="anchoooooor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="1000.0" />
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tab1" disable="true" text="Devices From Table 15 To Table 21">
+                     <content>
+                        <AnchorPane fx:id="anchoooooor1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="999.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="65.0" layoutY="18.0" prefHeight="32.0" prefWidth="116.0" text="Admin Panel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="1.0" layoutY="71.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="537.0" prefWidth="243.0">
+               <children>
+                  <Button fx:id="UserButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#UserDatabaseHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Users" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Arial" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../User%20Groups_50px1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="DevicesButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#DevicesDatabaseHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Devices">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Monitor_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="DrinksButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#DrinksDatabaseHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Drinks">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Cafe_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="OrdersButton" alignment="BOTTOM_LEFT" disable="true" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#OrdersHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Orders">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../order.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="ReportsButton1" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#PaymentsHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Payments">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../debit-cardss.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="ReportsButton11" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#HistoryHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="History">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ancient-scroll.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="ReportsButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#ReportsHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Reports">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Timesheet_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="StartDayButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#StartDayHandler" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Start Day">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Time_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="RestoreDataButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#RestoreDataButtonMethod" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Restore Data">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../server.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="EditTitleButton" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#EditTitleMethod" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Edit Title">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Restart_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="RestoreDataButton1" alignment="BOTTOM_LEFT" disable="true" mnemonicParsing="false" onAction="#UpdatePassButtonMethod" prefHeight="40.0" prefWidth="243.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 40;" stylesheets="@../dark-theme.css" text="Update Password">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../refresh-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <AnchorPane fx:id="AnchorPanePassword" disable="true" onMouseEntered="#Minimizee" prefHeight="104.0" prefWidth="201.0" style="-fx-background-color: black;">
+                     <children>
+                        <Button layoutX="46.0" layoutY="65.0" mnemonicParsing="false" onAction="#UpdatePassButtonMethodDB" text="Update">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="UpdatePassTextField" layoutX="14.0" layoutY="14.0" onAction="#UpdatePassButtonMethodDB" prefHeight="32.0" prefWidth="213.0" promptText="Enter New Password" style="-fx-prompt-text-fill: darkgoldenrod;" />
+                        <Button layoutX="136.0" layoutY="65.0" mnemonicParsing="false" onAction="#Hide" text="Hide">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Button fx:id="SaveAdminPassButton" layoutX="146.0" layoutY="651.0" mnemonicParsing="false" onAction="#SetAdminPassword" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #00a2d3;" stylesheets="@../dark-theme.css" text="Enter">
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <PasswordField fx:id="AdminPass" layoutX="14.0" layoutY="608.0" onAction="#SetAdminPassword" prefHeight="37.0" prefWidth="201.0" promptText="Enter Admin Password here" style="-fx-prompt-text-fill: darkgoldenrod;" stylesheets="@stylesheet.css" />
+            <ImageView fitHeight="32.0" fitWidth="23.0" layoutX="187.0" layoutY="615.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../2288-200.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="CheckUserNameButton" layoutX="674.0" layoutY="10.0" mnemonicParsing="false" onAction="#CheckUserNameExist" prefHeight="45.0" prefWidth="63.0" style="-fx-background-color: #ffffff;">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Male%20User_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="941.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#PrintLastOrder" prefHeight="37.0" prefWidth="41.0" stylesheets="@dark-theme%20-%20Copy.css" textFill="#a42b2b" textOverrun="LEADING_ELLIPSIS">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../print-flat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="833.0" layoutY="8.0" text="Print Last Order">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button disable="true" layoutX="298.0" layoutY="5.0" mnemonicParsing="false" onAction="#add" opacity="0.0" prefHeight="37.0" prefWidth="116.0" text="Additional Devices" />
+            <Button alignment="BOTTOM_LEFT" layoutX="275.0" layoutY="7.0" mnemonicParsing="false" onAction="#PaymentsOpen" prefHeight="40.0" prefWidth="163.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 10;" stylesheets="@../dark-theme.css" text="Add Payment">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../card%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="474.0" layoutY="11.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#OpenCalc" prefHeight="32.0" prefWidth="41.0" style="-fx-border-color: transparent; -fx-graphic-text-gap: 0;" stylesheets="@../dark-theme.css">
+               <font>
+                  <Font name="Arial Black" size="8.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../calculator.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

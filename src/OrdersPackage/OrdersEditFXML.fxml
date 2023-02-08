@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="1053.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrdersPackage.OrdersEditFXMLController">
+   <children>
+      <TableView fx:id="table" layoutX="244.0" layoutY="14.0" onKeyReleased="#loadfromtable" onMouseClicked="#loadfromtable" onMousePressed="#loadfromtable" prefHeight="626.0" prefWidth="804.0" stylesheets="@../bootstrap2.css">
+        <columns>
+          <TableColumn fx:id="NumberCol" prefWidth="122.0" text="Order Number" />
+          <TableColumn fx:id="CashierCol" prefWidth="128.0" text="Cashier" />
+            <TableColumn fx:id="PriceCol" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="DetilsCol" prefWidth="300.0" text="Order Details" />
+            <TableColumn fx:id="StartCol" prefWidth="88.0" text="Start Time" />
+            <TableColumn fx:id="EndCol" prefWidth="88.0" text="End Time" />
+        </columns>
+      </TableView>
+      <VBox layoutX="14.0" layoutY="60.0" prefHeight="167.0" prefWidth="223.0" spacing="40.0">
+         <children>
+            <JFXTextField fx:id="OrderNumberTextField" disable="true" editable="false" labelFloat="true" promptText="Order Number" />
+            <JFXTextField fx:id="PriceTextField" labelFloat="true" promptText="Order Price" />
+            <JFXTextField fx:id="CashierTextField" disable="true" editable="false" prefHeight="4.0" prefWidth="223.0" promptText="Cashier" />
+            <JFXTextField fx:id="DetailsTextField" disable="true" editable="false" layoutX="10.0" layoutY="140.0" opacity="0.0" prefHeight="123.0" prefWidth="223.0" />
+         </children>
+      </VBox>
+      <Button layoutX="48.0" layoutY="270.0" mnemonicParsing="false" onAction="#UpdateOrders" stylesheets="@../javafxapplication11/dark-theme%20-%20Copy.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="145.0" layoutY="270.0" mnemonicParsing="false" onAction="#DeleteOrders" stylesheets="@../javafxapplication11/dark-theme%20-%20Copy%20-%20Copy.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Delete_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="26.0" layoutY="375.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;">
+         <children>
+            <JFXComboBox fx:id="DrinksCombobox" labelFloat="true" layoutX="3.0" layoutY="29.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#FillLCombobox" prefHeight="25.0" prefWidth="184.0" promptText="اختار المشروب" />
+            <JFXTextField fx:id="drinksquantity" alignment="CENTER_RIGHT" labelFloat="true" layoutX="8.0" layoutY="88.0" prefHeight="25.0" prefWidth="175.0" promptText="العدد المسترجع للمخزن" />
+            <JFXButton layoutX="56.0" layoutY="140.0" onAction="#returnDrink" prefHeight="46.0" prefWidth="79.0" ripplerFill="#030303" style="-fx-background-color: green smoke;" text="استرجاع" textFill="WHITE">
+               <font>
+                  <Font name="Hacen Tunisia Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

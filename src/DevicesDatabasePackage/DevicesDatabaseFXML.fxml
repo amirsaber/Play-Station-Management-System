@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DevicesDatabasePackage.DevicesDatabaseClassController">
+   <children>
+      <TableView fx:id="table" layoutX="324.0" layoutY="6.0" onKeyReleased="#loadfromtable" prefHeight="490.0" prefWidth="935.0" stylesheets="@../dark-theme.css">
+        <columns>
+          <TableColumn fx:id="NameCol" minWidth="0.0" prefWidth="4.0" text="Device name" />
+            <TableColumn fx:id="NameCola" prefWidth="322.0" text="Device name" />
+            <TableColumn fx:id="PriceCol" prefWidth="124.0" text="Price Per Hour" />
+            <TableColumn fx:id="QuantityCol" prefWidth="150.0" text="Price Per Match" />
+            <TableColumn fx:id="CountCol" prefWidth="150.0" text="Price Hour Multi" />
+            <TableColumn fx:id="nCol" prefWidth="171.0" text="Price Match Multi" />
+        </columns>
+      </TableView>
+      <VBox layoutX="16.0" layoutY="13.0" prefHeight="505.0" prefWidth="284.0" spacing="10.0">
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="0.0" prefWidth="71.0" text="Device Name" />
+            <TextField fx:id="drinksnametextfield" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="0.0" prefWidth="284.0" promptText="Device Name*" stylesheets="@../dark-theme.css" />
+            <Label layoutX="10.0" layoutY="10.0" text="Device Name" />
+            <TextField fx:id="drinksnametextfield1" layoutX="10.0" layoutY="37.0" promptText="Device Name*" stylesheets="@../dark-theme.css" />
+            <Label layoutX="10.0" layoutY="10.0" text="Price Per Hour" />
+            <TextField fx:id="pricetextfield" layoutX="10.0" layoutY="10.0" promptText="Price per hour*" stylesheets="@../dark-theme.css" />
+            <Label text="Price Per Match" />
+            <TextField fx:id="quantitytextfield" layoutX="10.0" layoutY="48.0" promptText="Price per  match*" stylesheets="@../dark-theme.css" />
+            <Label layoutX="10.0" layoutY="160.0" text="Price Per Hour Multi" />
+            <TextField fx:id="counttextfield" layoutX="10.0" layoutY="106.0" prefWidth="284.0" promptText="Multi Hour Price" stylesheets="@../dark-theme.css" />
+            <Label layoutX="10.0" layoutY="235.0" text="Price Per Match Multi" />
+            <TextField fx:id="ntextfield" layoutX="10.0" layoutY="154.0" prefWidth="284.0" promptText="Multi Match Price" stylesheets="@../dark-theme.css" />
+            <HBox disable="true" prefHeight="6.0" prefWidth="209.0" stylesheets="@../dark-theme.css">
+               <children>
+                  <Button disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#LoadTable" opacity="0.0" prefHeight="0.0" prefWidth="38.0" text="load tables">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="65.0" right="10.0" top="25.0" />
+               </VBox.margin></HBox>
+            <HBox prefHeight="61.0" prefWidth="284.0" spacing="10.0" stylesheets="@../dark-theme.css">
+               <children>
+                  <Button disable="true" mnemonicParsing="false" onAction="#AddNewUser" prefHeight="40.0" prefWidth="72.0" stylesheets="@../dark-theme.css" text="Add" />
+                  <Button mnemonicParsing="false" onAction="#UpdateUser" prefHeight="40.0" prefWidth="113.0" text="update" />
+                  <Button disable="true" mnemonicParsing="false" onAction="#DeleteUser" text="delete" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ListView fx:id="list" layoutX="14.0" layoutY="27.0" onKeyReleased="#FillFromListview" onMouseClicked="#FillFromListview" opacity="0.0" prefHeight="505.0" prefWidth="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="505.0" prefWidth="568.0" style="-fx-background-color: #383636; -fx-opacity: 1;" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication11.FXMLDocumentController">
+   <children>
+      <VBox fx:id="VBOXX" alignment="CENTER" layoutX="5.0" layoutY="7.0" prefHeight="479.0" prefWidth="460.0" style="-fx-background-color: #282828;" stylesheets="@dark-theme.css">
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../CreateNewUserPackage/dsllld.png" />
+               </image>
+            </ImageView>
+            <HBox fx:id="HBOXX2" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../person.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="UserNameLogin" alignment="CENTER" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="300.0" promptText="User Name " style="-fx-prompt-text-fill: darkgoldenrod;" />
+               </children>
+            </HBox>
+            <HBox fx:id="HBOXX1" alignment="CENTER" layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="626.0">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../lock.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="PasswordLogin" alignment="CENTER" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="300.0" promptText="Password" style="-fx-prompt-text-fill: darkgoldenrod;" />
+               </children>
+            </HBox>
+            <HBox fx:id="HBOXX" alignment="BOTTOM_RIGHT" prefHeight="37.0" prefWidth="626.0">
+               <children>
+                  <ProgressBar fx:id="bar" opacity="0.0" prefHeight="11.0" prefWidth="169.0" stylesheets="@newCascadeStyleSheet.css">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="50.0" />
+                     </HBox.margin>
+                  </ProgressBar>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#MouseEntered" onMouseExited="#MouseExit" text="Login">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="474.0" layoutY="26.0" prefHeight="455.0" prefWidth="80.0" spacing="90.0" style="-fx-background-color: #383636;" stylesheets="@dark-theme.css">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="AddImg" fitHeight="72.0" fitWidth="80.0" onMouseEntered="#MouseEntered" onMouseExited="#MouseExit" onMousePressed="#AddUserHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../create_user_group-512.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="80.0" text="Create New User" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="4.0">
+               <children>
+                  <ImageView fx:id="DeleteImg" fitHeight="64.0" fitWidth="64.0" onMouseEntered="#MouseEntered" onMouseExited="#MouseExit" onMousePressed="#DeleteUserHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../storingasasasasaa.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="80.0" text="Backup DataBase" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="DatabaseImg" fitHeight="72.0" fitWidth="80.0" onMouseEntered="#MouseEntered" onMouseExited="#MouseExit" onMousePressed="#DatabaseHandler" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ssssssssssssssss.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Label alignment="BOTTOM_LEFT" layoutX="216.0" layoutY="487.0" onMouseClicked="#OpenTMPage" onMouseEntered="#MouseEntered" onMouseExited="#MouseExit" prefHeight="13.0" prefWidth="124.0" text="Developed By TM ©" textFill="#f22424" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

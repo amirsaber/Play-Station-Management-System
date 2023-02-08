@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6bbeff46-7d82-4856-90ff-14987fade5f2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from Devices]]>
+	</queryString>
+	<field name="PlayStationType" class="java.lang.Object"/>
+	<field name="PerHour" class="java.lang.Object"/>
+	<field name="PerMatch" class="java.lang.Object"/>
+	<field name="HoursCount" class="java.lang.Object"/>
+	<field name="MatchesCount" class="java.lang.Object"/>
+	<field name="PerHourM" class="java.lang.Object"/>
+	<field name="PerMatchM" class="java.lang.Object"/>
+	<field name="HoursCountM" class="java.lang.Object"/>
+	<field name="MatchesCountM" class="java.lang.Object"/>
+	<field name="Namee" class="java.lang.Object"/>
+	<title>
+		<band height="51" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="100" height="20" uuid="b63f818d-7d40-4157-bf40-12e3c3418a90"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="h.mm a">
+				<reportElement x="0" y="31" width="100" height="20" uuid="c94ca079-0f49-4e43-846c-2b49cc7b89d7"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="196" y="0" width="163" height="51" forecolor="#0000FF" uuid="86a90ad7-0aaf-40eb-b682-343a618dcb8e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Titillium Web" size="24" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Devices Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="50" width="555" height="1" uuid="4f952b02-3fc7-46b1-ae2a-9e759380a274"/>
+			</line>
+			<image>
+				<reportElement x="455" y="0" width="100" height="30" uuid="e574a8af-3f94-478d-9517-d4cdd1d51feb"/>
+				<imageExpression><![CDATA["C:\\Meda photo\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="56" splitType="Stretch">
+			<textField>
+				<reportElement x="185" y="35" width="95" height="20" uuid="451dbc35-9fc0-4155-87fe-b0983660f12f"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{HoursCount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="35" width="90" height="20" uuid="d43cd772-0da0-45c4-a509-3815c5e9649b"/>
+				<textElement>
+					<font fontName="Titillium Web"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{MatchesCount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="20" forecolor="#0000FF" uuid="9de8801c-e988-4dff-8e3b-1127d08e8425"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Play StationType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="95" height="20" forecolor="#0000FF" uuid="e492d20a-de2b-48ac-9ae1-11b27c73779c"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Hours Count]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="55" width="555" height="1" uuid="c84cccc8-f5ae-46f4-b31f-e876d8a5c8e4"/>
+			</line>
+			<textField>
+				<reportElement x="370" y="35" width="90" height="20" uuid="7822de0c-1a9a-4d1c-939f-e2701adb9eb3"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{HoursCountM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="35" width="95" height="20" uuid="aa0ce3bd-e091-437e-b4bf-7edfa44385b2"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{MatchesCountM}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="0" width="90" height="20" forecolor="#0000FF" uuid="cdec5170-9166-4e90-a38b-3e3a89a6ba29"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Matches Count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="90" height="20" forecolor="#0000FF" uuid="6fc744de-c3e1-4ec9-a3d1-eb08815e8e78"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Hours Count Multi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="95" height="20" forecolor="#0000FF" uuid="0d6bf074-65db-4287-9a81-cb922c756730"/>
+				<textElement>
+					<font fontName="Titillium Web" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Matches Count Multi]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="36" width="185" height="20" forecolor="#FF3333" backcolor="#FFFFFB" uuid="19e1f4ee-f50a-434f-b7de-473c59d2d3c7"/>
+				<textElement>
+					<font fontName="Titillium Web" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{Namee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

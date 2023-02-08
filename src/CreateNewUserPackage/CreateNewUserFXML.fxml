@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="551.0" style="-fx-background-color: #45B8D2;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateNewUserPackage.CreateNewUserClassController">
+   <children>
+      <StackPane layoutX="14.0" layoutY="45.0" prefHeight="238.0" prefWidth="255.0">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../add_user-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <VBox alignment="TOP_CENTER" layoutX="269.0" layoutY="45.0" prefHeight="238.0" prefWidth="268.0" spacing="50.0" stylesheets="@../javafxapplication11/dark-theme.css">
+         <children>
+            <TextField fx:id="CreateNewUserTextField" promptText="User Name*" stylesheets="@../javafxapplication11/dark-theme.css" />
+            <PasswordField fx:id="CreateNewUserPasswordField" promptText="Password*" stylesheets="@../javafxapplication11/dark-theme.css" />
+            <Button mnemonicParsing="false" onAction="#CreateNewUserAction" prefHeight="28.0" prefWidth="62.0" style="-fx-background-color: white; -fx-border-style: bold;" text="save">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="100.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

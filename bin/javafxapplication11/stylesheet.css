@@ -1,0 +1,11 @@
+
+.field-back{
+
+    -fx-animated: true;
+    -fx-text-fill: black   ;
+    -fx-prompt-text-fill:  darkgoldenrod;
+    -fx-highlight-text-fill: black ;
+    -fx-highlight-fill:  gray ;
+    -fx-background-color: rgba(255.0,255.0,255.0, 0.8 );
+
+}
